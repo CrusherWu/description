@@ -19,23 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    YYObject *obj = [YYObject new];
-//    obj.firstName = @"wu";
-//    obj.lastName = @"seya";
-
-//    NSLog(@"obj = %@",obj);
-    
-    Person *person = [Person new];
-//    person.lastName = @"fdkhfkd";
-//    person.firstName = @"dfhdf";
-//    person.fullName = [NSString stringWithFormat:@"%@%@",person.firstName,person.lastName];
-    person.fullName = [NSString stringWithFormat:@"%@",@"wuseya"];
-    person.age = 20;
-    person.isMan = YES;
-    person.money = 134444;
-    
-    YYLog(@"person:%@",person);
-    
+    NSMutableArray *mutableArray = [NSMutableArray array];
+    for (int i = 0; i < 5; i++) {
+        Person *person = [Person new];
+        person.fullName = [NSString stringWithFormat:@"person's fullName is:去你妹的%d",i];
+        person.money = i;
+        person.age = i;
+        
+        [mutableArray addObject:person];
+    }
+    NSLog(@"mutableArray:%@",mutableArray);
 }
 
 @end

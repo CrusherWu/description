@@ -15,8 +15,10 @@
 		04024C231E37244600AFC03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04024C211E37244600AFC03F /* LaunchScreen.storyboard */; };
 		04024C2E1E37244600AFC03F /* YYLogTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04024C2D1E37244600AFC03F /* YYLogTests.m */; };
 		04024C391E37244600AFC03F /* YYLogUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04024C381E37244600AFC03F /* YYLogUITests.m */; };
-		04024C481E37246D00AFC03F /* YYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04024C471E37246D00AFC03F /* YYObject.m */; };
 		0409AE8E1E37883B001EA09F /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0409AE8D1E37883B001EA09F /* Person.m */; };
+		04A9F1EB1E7843E300A56953 /* YYObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9F1EA1E7843E300A56953 /* YYObject.m */; };
+		04A9F1EE1E78443000A56953 /* NSDictionary+YYUnicodeToChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9F1ED1E78443000A56953 /* NSDictionary+YYUnicodeToChinese.m */; };
+		04A9F1F11E78467100A56953 /* NSArray+YYUnicodeToChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A9F1F01E78467100A56953 /* NSArray+YYUnicodeToChinese.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +55,14 @@
 		04024C341E37244600AFC03F /* YYLogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YYLogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04024C381E37244600AFC03F /* YYLogUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYLogUITests.m; sourceTree = "<group>"; };
 		04024C3A1E37244600AFC03F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04024C461E37246D00AFC03F /* YYObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYObject.h; sourceTree = "<group>"; };
-		04024C471E37246D00AFC03F /* YYObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYObject.m; sourceTree = "<group>"; };
 		0409AE8C1E37883B001EA09F /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		0409AE8D1E37883B001EA09F /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		04A9F1E91E7843E300A56953 /* YYObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYObject.h; sourceTree = "<group>"; };
+		04A9F1EA1E7843E300A56953 /* YYObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYObject.m; sourceTree = "<group>"; };
+		04A9F1EC1E78443000A56953 /* NSDictionary+YYUnicodeToChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YYUnicodeToChinese.h"; sourceTree = "<group>"; };
+		04A9F1ED1E78443000A56953 /* NSDictionary+YYUnicodeToChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YYUnicodeToChinese.m"; sourceTree = "<group>"; };
+		04A9F1EF1E78467100A56953 /* NSArray+YYUnicodeToChinese.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+YYUnicodeToChinese.h"; sourceTree = "<group>"; };
+		04A9F1F01E78467100A56953 /* NSArray+YYUnicodeToChinese.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+YYUnicodeToChinese.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +113,7 @@
 		04024C121E37244600AFC03F /* YYLog */ = {
 			isa = PBXGroup;
 			children = (
-				04024C161E37244600AFC03F /* AppDelegate.h */,
-				04024C171E37244600AFC03F /* AppDelegate.m */,
+				04A9F1E81E7843E300A56953 /* YYModel */,
 				04024C191E37244600AFC03F /* ViewController.h */,
 				04024C1A1E37244600AFC03F /* ViewController.m */,
 				04024C1C1E37244600AFC03F /* Main.storyboard */,
@@ -116,8 +121,6 @@
 				04024C211E37244600AFC03F /* LaunchScreen.storyboard */,
 				04024C241E37244600AFC03F /* Info.plist */,
 				04024C131E37244600AFC03F /* Supporting Files */,
-				04024C461E37246D00AFC03F /* YYObject.h */,
-				04024C471E37246D00AFC03F /* YYObject.m */,
 				0409AE8C1E37883B001EA09F /* Person.h */,
 				0409AE8D1E37883B001EA09F /* Person.m */,
 			);
@@ -127,6 +130,8 @@
 		04024C131E37244600AFC03F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04024C161E37244600AFC03F /* AppDelegate.h */,
+				04024C171E37244600AFC03F /* AppDelegate.m */,
 				04024C141E37244600AFC03F /* main.m */,
 			);
 			name = "Supporting Files";
@@ -148,6 +153,19 @@
 				04024C3A1E37244600AFC03F /* Info.plist */,
 			);
 			path = YYLogUITests;
+			sourceTree = "<group>";
+		};
+		04A9F1E81E7843E300A56953 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				04A9F1E91E7843E300A56953 /* YYObject.h */,
+				04A9F1EA1E7843E300A56953 /* YYObject.m */,
+				04A9F1EC1E78443000A56953 /* NSDictionary+YYUnicodeToChinese.h */,
+				04A9F1ED1E78443000A56953 /* NSDictionary+YYUnicodeToChinese.m */,
+				04A9F1EF1E78467100A56953 /* NSArray+YYUnicodeToChinese.h */,
+				04A9F1F01E78467100A56953 /* NSArray+YYUnicodeToChinese.m */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,9 +303,11 @@
 			files = (
 				04024C1B1E37244600AFC03F /* ViewController.m in Sources */,
 				04024C181E37244600AFC03F /* AppDelegate.m in Sources */,
+				04A9F1F11E78467100A56953 /* NSArray+YYUnicodeToChinese.m in Sources */,
 				0409AE8E1E37883B001EA09F /* Person.m in Sources */,
-				04024C481E37246D00AFC03F /* YYObject.m in Sources */,
 				04024C151E37244600AFC03F /* main.m in Sources */,
+				04A9F1EB1E7843E300A56953 /* YYObject.m in Sources */,
+				04A9F1EE1E78443000A56953 /* NSDictionary+YYUnicodeToChinese.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/YYLog/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = YYLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrusherWu.YYLog;
@@ -456,7 +476,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/YYLog/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = YYLog/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CrusherWu.YYLog;

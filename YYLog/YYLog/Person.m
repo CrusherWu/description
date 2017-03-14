@@ -11,10 +11,5 @@
 
 @implementation Person
 
--(NSString *)description
-{
-    NSLog(@"child's description!");
-    return [super description];
-}
 
 @end
