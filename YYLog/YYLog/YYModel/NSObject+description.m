@@ -1,24 +1,15 @@
-
 //
-//  YYObject.m
+//  NSObject+description.m
 //  YYLog
 //
-//  Created by B2吴XX on 2017/1/24.
+//  Created by B2吴XX on 2017/3/16.
 //  Copyright © 2017年 B2吴XX. All rights reserved.
 //
 
-#import "YYObject.h"
+#import "NSObject+description.h"
 #import <objc/runtime.h>
 
-@implementation YYObject
-
-- (instancetype)init
-{
-    if (self = [super init]) {
-    
-    }
-    return self;
-}
+@implementation NSObject (description)
 
 -(NSString *)description
 {
@@ -37,7 +28,7 @@
     
     return [NSString stringWithFormat:@"< %@: %p, %@>",[self class],self,dict];
     
-//    return [NSString stringWithFormat:@"< %@: %p,firstName: %@,lastName:%@>",[self class],self,_firstName,_lastName];
+    //    return [NSString stringWithFormat:@"< %@: %p,firstName: %@,lastName:%@>",[self class],self,_firstName,_lastName];
 }
 
 @end
